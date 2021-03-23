@@ -62,9 +62,18 @@ function TweetQuote(){
     const TwitterUrl = `https://twitter.com/intent/tweet?text=${Quote.text} - ${Quote.author}`;
     window.open(TwitterUrl,'_blank');
 }
+/** function:: loader
+ *  Use:: Show Loader till Quotes are fetched
+ *  Author:: Ashish
+ */
 function loader(){
     document.getElementById('quote-container').hidden = true;
 }
+/** function:: removeLoader
+ *  Use:: Remove loader once Quotes are fetched
+ *  Author:: Ashish 
+ * 
+ */
 function removeLoader(){
     document.getElementById('quote-container').hidden = false;
     document.getElementById('loader').hidden = true;
